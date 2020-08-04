@@ -3,6 +3,10 @@ struct Rectangle {
     height: u32,
 }
 
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
+}
+
 fn main() {
     let rect1 = Rectangle {
         width: 30,
@@ -15,6 +19,3 @@ fn main() {
     );
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
-}
