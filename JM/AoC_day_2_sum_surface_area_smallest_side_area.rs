@@ -13,7 +13,6 @@ fn get_text(filename: String) {
     if let Ok(lines) = read_lines(filename) {
         for line in lines {
             if let Ok(ip) = line {
-                //println!("{}", ip);
                 let arr=ip.split("x");
 		let vec: Vec<&str> = arr.collect();
 		let l: i32 = vec[0].parse().unwrap();		
